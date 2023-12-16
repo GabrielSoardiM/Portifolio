@@ -32,7 +32,7 @@ body{
     cursor: pointer;
 }
 
-.btn-contato button:hover{
+button:hover{
     box-shadow: 0px 0px 8px var(--cor3);
     transform: scale(1.05);
     transition: 0.3s;
@@ -131,9 +131,8 @@ section.topo-site  .txt-topo-site p{
 /* ESTILO ESPECIALIDADES */
 
 .especialidades{
-    margin: 50px 7%;
-    padding: 100px;
-    
+    padding: 50px 7%;
+    margin-top: 100px;
 }
 
 .especialidades h2.titulo span{
@@ -141,16 +140,16 @@ section.topo-site  .txt-topo-site p{
 }
 
 .especialidades .flex{
-    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .especialidades .flex .catalogo{
     color: white;
-    text-align: justify;
     padding: 35px;
     margin-top: 45px;
     border-radius: 20px;
-
     width: 300px;
     height: 400px;
 }
@@ -168,4 +167,62 @@ section.topo-site  .txt-topo-site p{
 .especialidades .flex .catalogo h3{
     margin: 15px 0;
     font-size: 28px;
+}
+
+/*ESTILO SOBRE MIM*/
+
+.sobre-mim{
+    padding: 80px 7%;
+}
+
+.sobre-mim .flex{
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre-mim .informacoes-img img{
+    height: 500px;
+    border-radius: 20px;
+}
+
+.sobre-mim .informacoes{
+    color: white;
+}
+
+.sobre-mim .informacoes h2{
+    text-align: left;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre-mim .informacoes h2 span{
+    color: var(--cor1);
+    display: block;
+}
+
+.sobre-mim .informacoes p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre-mim .informacoes img {
+    width: 60px;
+    height: 60px;
+    margin: 20px 20px 0px 0px;
+}
+
+.sobre-mim .informacoes .btn-social a{
+    text-decoration: none;
+    width: 60px;
+}
+
+.sobre-mim .informacoes .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--cor1);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
 }
