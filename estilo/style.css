@@ -35,7 +35,7 @@ body{
 
 .btn-social a{
     text-decoration: none;
-    width: 60px;
+    display: contents;
 }
 
 .btn-social button{
@@ -333,7 +333,13 @@ footer{
 
 footer .flex{
     justify-content: space-between;
+    align-items: center;
 }
+
+footer .line-footer .flex .btn-social a{
+    display: contents;
+}
+
 
 footer .line-footer{
     padding: 20px 0;
@@ -349,5 +355,5 @@ footer .line-footer p i{
 }
 
 footer .line-footer p a{
-    color: white;
+    color: var(--cor2);
 }
