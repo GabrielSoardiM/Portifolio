@@ -23,17 +23,17 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="imagens/corporacao.png" alt="Logo Agência GBL" id="logo_agencia">
+                    <img src="imagens/corporacao.png" alt="Logo Agência GBL" class="logo_agencia">
                 </a>
             </div>
         
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="#topo-site">Início</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#sobre-mim">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#portifolio">Projetos</a></li>
                 </ul>
             </nav>
 
@@ -46,7 +46,7 @@
     </header>
 
     <main>
-        <section class="topo-site">
+        <section class="topo-site" id="topo-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span>.</h2>
                 
@@ -96,7 +96,7 @@
             </div>
         </section>
 
-        <section class="sobre-mim">
+        <section class="sobre-mim" id="sobre-mim">
             <div class="interface">
                 <div class="flex">
                     <div class="informacoes-img">
@@ -106,26 +106,78 @@
                     <div class="informacoes">
                         <h2 class="titulo">MUITO PRAZER, <span>SOU GABRIEL SOARDI.</span></h2>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corrupti quam modi culpa! Vitae dolor alias, obcaecati officiis quia necessitatibus itaque labore rem illo cupiditate, quam distinctio iure nostrum. Voluptatem?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quia laboriosam ipsum, explicabo reiciendis odit nobis fugit. Quia molestias, sint cum, ipsam placeat nulla magni beatae adipisci, laudantium magnam error!</p>
+                        <p>A proposta dessa página é mostrar um pouco do meu conhecimento e juntamente a isso mostrar para o mundo o meu objetivo de conquistar uma oportunidade no mercado de trabalho.</p>
+                        <p>Cursei o ensino médio e integrado a ele, o técnico em informática, aonde eu descobri a paixão pela programação. Ao me formar, me voluntariei para o serviço militar,
+                            para conhecer e aprender coisas que nenhum outro lugar me ensinaria, sendo assim, disciplina, respeito e a determinação de cumprir com excelência as atividades foram os maiores ensinamentos que tive. Mesmo trabalhando nunca parei de estudar e me aperfeiçoar
+                            pois sempre tive em mente a carreira como programador. E hoje estou procurando uma oportunidade de demonstrar todo o meu pontecial e conhecimento.
+                        </p>
 
                         <div class="btn-social">
-                            <a href="https://www.instagram.com/soardigabriel/" target="_blank">
-                                <button><i class="bi bi-instagram"></i></button>
-                            </a>
-    
-                            <a href="https://www.linkedin.com/in/gabriel-soardi-machado-10649024a/" target="_blank">
-                                <button><i class="bi bi-linkedin"></i></button>
-                            </a>
-    
-                            <a href="https://github.com/GabrielSoardiM" target="_blank">
-                                <button><i class="bi bi-github"></i></button>
-                            </a>
+                            <a href="https://www.instagram.com/soardigabriel/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/gabriel-soardi-machado-10649024a/" target="_blank"><button><i class="bi bi-linkedin"></i></button>
+                            <a href="https://github.com/GabrielSoardiM" target="_blank"><button><i class="bi bi-github"></i></button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="portifolio" id="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO</span>.</h2>
+
+                <div class="flex">
+                    <div class="box" style="background-image: url(imagens/p_media.PNG);">
+                        <div class="overlay">Projeto Media Query</div>
+                    </div>
+                    
+                    <div class="box" style="background-image: url(imagens/p_xmen.PNG);">
+                        <div class="overlay">Projeto X-Men</div>
+                    </div>
+                    
+                    <div class="box" style="background-image: url(imagens/p_redes.PNG);">
+                        <div class="overlay">Projeto iFrame</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO</span>.</h2>
+
+                <form action="">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu email:" required>
+                    <input type="tel" name="tel" id="tel" placeholder="Seu telefone:" required>
+                    <textarea name="txt" id="txt" placeholder="Sua mensagem..." required></textarea>
+                    
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer borda">
+                <div class="flex">
+                    <img class="logo_agencia" src="imagens/corporacao.png" alt="">
+
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/soardigabriel/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/gabriel-soardi-machado-10649024a/" target="_blank"><button><i class="bi bi-linkedin"></i></button>
+                        <a href="https://github.com/GabrielSoardiM" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="line-footer">
+                <p><i class="bi bi-envelope"></i><a href="mailto:soardigabriel1@gmail.com" target="_blank">soardigabriel1@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

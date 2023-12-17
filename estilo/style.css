@@ -30,9 +30,26 @@ body{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover{
+.btn-social a{
+    text-decoration: none;
+    width: 60px;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--cor1);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover, .btn-enviar input:hover{
     box-shadow: 0px 0px 8px var(--cor3);
     transform: scale(1.05);
     transition: 0.3s;
@@ -46,6 +63,11 @@ h2.titulo{
     color: white;
     text-align: center;
     font-size: 40px;
+    cursor: default;
+}
+
+h2.titulo span{
+    color: var(--cor1);
 }
 
 /*ESTILO CABEÇALHO*/
@@ -60,7 +82,7 @@ header > .interface{
     justify-content: space-between;
 }
 
-img#logo_agencia{
+img.logo_agencia{
     width: 120px;
 }
 
@@ -68,12 +90,12 @@ header a{
     color: var(--cor2);
     text-decoration: none;
     display: inline-block;
+    transition: 0.3s;
 }
 
 header a:hover{
     color: white;
     transform: scale(1.1);
-    transition: 0.3s;
 }
 
 header nav ul{
@@ -112,7 +134,7 @@ section.topo-site  .txt-topo-site p{
     margin: 40px 0;
 }
 
-.topo-site .img-topo-site img{
+section.topo-site .img-topo-site img{
     width: 250px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -135,10 +157,6 @@ section.topo-site  .txt-topo-site p{
     margin-top: 100px;
 }
 
-.especialidades h2.titulo span{
-    color: var(--cor1);
-}
-
 .especialidades .flex{
     align-items: center;
     justify-content: center;
@@ -152,11 +170,11 @@ section.topo-site  .txt-topo-site p{
     border-radius: 20px;
     width: 300px;
     height: 400px;
+    transition: .2s;
 }
 
 .especialidades .flex .catalogo:hover{
     transform: scale(1.1);
-    transition: .2s;
     box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.600);
 }
 
@@ -196,7 +214,6 @@ section.topo-site  .txt-topo-site p{
 }
 
 .sobre-mim .informacoes h2 span{
-    color: var(--cor1);
     display: block;
 }
 
@@ -211,18 +228,126 @@ section.topo-site  .txt-topo-site p{
     margin: 20px 20px 0px 0px;
 }
 
-.sobre-mim .informacoes .btn-social a{
-    text-decoration: none;
-    width: 60px;
+/*ESTILO PORTIFOLIO*/
+
+.portifolio{
+    padding: 50px 7%;
+    box-shadow: 0px 0px 40px 10px rgb(255, 255, 255, 0.100);
 }
 
-.sobre-mim .informacoes .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 0;
+.portifolio .flex{
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.portifolio .box{
+    width: 360px;
+    height: 460px;
     background-color: var(--cor1);
-    font-size: 22px;
+    background-size: cover;
+    background-position: 0%;
     cursor: pointer;
-    margin: 0 10px;
+    border-radius: 40px;
+    position: relative;
+    transition: 7s;
+}
+
+.portifolio .box:hover{
+    background-position: 100%;
+}
+
+.portifolio .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+}
+
+.portifolio .overlay:hover{
+    opacity: 1;
+    transition: 0.7s;
+}
+
+/*ESTILO FORMULARIO*/
+
+.formulario{
+    padding: 80px 7%;
+}
+
+.formulario form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario form input, .formulario form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.formulario form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+.formulario form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.formulario form .btn-enviar input{
+    width: 110px;
+    background-color: var(--cor1);
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+    transition: .2s;
+}
+
+/* ESTILO RODAPE */
+
+footer{
+    padding: 40px 7%;
+    box-shadow: 0px 0px 40px 10px rgb(255, 255, 255, 0.100);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+footer .borda{
+    border-bottom: 2px solid var(--cor1);
+}
+
+footer .line-footer p i{
+    color: var(--cor1);
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: white;
 }
