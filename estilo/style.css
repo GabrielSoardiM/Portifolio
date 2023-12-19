@@ -478,8 +478,7 @@ footer .line-footer p a{
 
     .especialidades .flex{
         gap: 20px;
-        flex-direction: row;
-        
+        flex-direction: column;
     }
 
     .especialidades h2.titulo{
