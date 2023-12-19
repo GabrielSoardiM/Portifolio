@@ -17,13 +17,15 @@
     <title>Agência GBL</title>
 
     <link rel="stylesheet" href="estilo/style.css">
+    <script src="script/script.js" defer></script>
 </head>
 <body>
+
     <header>
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="imagens/corporacao.png" alt="Logo Agência GBL" class="logo_agencia">
+                    <img src="imagens/logo_agencia.png" alt="Logo Agência GBL" class="logo_agencia">
                 </a>
             </div>
         
@@ -38,10 +40,32 @@
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#topo-site">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre-mim">Sobre</a></li>
+                        <li><a href="#portifolio">Projetos</a></li>
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
 
@@ -58,7 +82,7 @@
                             resultados, estou pronto para criar a presença online dos seus sonhos.</p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#formulario">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -170,7 +194,7 @@
         <div class="interface">
             <div class="line-footer borda">
                 <div class="flex">
-                    <img class="logo_agencia" src="imagens/corporacao.png" alt="">
+                    <img class="logo_agencia" src="imagens/logo_agencia.png" alt="">
 
                     <div class="btn-social">
                         <a href="https://www.instagram.com/soardigabriel/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
@@ -181,7 +205,7 @@
             </div>
             
             <div class="line-footer">
-                <p><i class="bi bi-envelope"></i> <a href="mailto:soardigabriel1@gmail.com" target="_blank">soardigabriel1@gmail.com</a></p>
+                <p><i class="bi bi-envelope"></i> <a href="mailto:soardigabriel1@gmail.com?" target="_blank">soardigabriel1@gmail.com</a></p>
             </div>
         </div>
     </footer>
